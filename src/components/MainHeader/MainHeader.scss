@@ -1,0 +1,45 @@
+@import '../../styles/base.scss';
+
+.header {
+    width: 100%;
+    background-color: $white;
+    box-shadow: 1px 0 7px 1px $light-grey;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+
+    .header-title {
+        padding: 1rem 0;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24px;
+        width: 50%;
+    }
+
+    .header-menu {
+        padding: 1rem 0;
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+
+        .menu-item {
+            font-weight: 600;
+            font-size: 13px;
+            display: inline-block;
+            padding: 0 1rem;
+            vertical-align: middle;
+
+            a {
+                font-weight: 700;
+                color: $light-black;
+                text-decoration: none;
+                
+                &:focus,
+                &:active,
+                &:hover {
+                    color: $main-orange;
+                }
+            }
+        }
+    }
+}

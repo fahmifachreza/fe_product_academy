@@ -1,0 +1,116 @@
+@import '../../styles/base.scss';
+
+@mixin btn-color($color) {
+    border-color: $color;
+    background-color: $color;
+    color: $white;
+
+    &:hover {
+        border-color: darken($color, 8%);
+        background-color: darken($color, 8%);
+    }
+
+    &:focus,
+    &:active {
+        border-color: lighten($color, 8%);
+        background-color: lighten($color, 8%);
+    }
+
+    &.inverse {
+        border-color: lighten($color, 8%);
+        background-color: $white;
+        color: $color;
+
+        &:hover {
+            border-color: $color;
+            background-color: $color;
+            color: $white;
+        }
+
+        &:focus,
+        &:active {
+            border-color: $color;
+            background-color: $color;
+            color: $white;
+        }
+    }
+}
+
+@mixin btn-size($multiplier) {
+    font-size: 14px * $multiplier;
+    padding: (0.5rem * $multiplier) (2rem * $multiplier)
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $light-black;
+    margin: 2px;
+
+    &:focus,
+    &:active,
+    &:hover{
+        background-color: $light-grey;
+    }
+}
+
+.btn-primary { @include btn-color($main-orange) }
+.btn-secondary { @include btn-color($main-green) }
+
+.btn-small { @include btn-size(0.8) }
+.btn-big { @include btn-size(1.4) }
+
+.btn-full {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn.disabled,
+.btn:disabled {
+    border-color: transparent;
+    background-color: $main-grey;
+    color: $light-black;
+    cursor: not-allowed;
+}
+
+.btn-bounce {
+    -webkit-animation: bounce 0.45s ease-in-out;
+    -moz-animation: bounce 0.45s ease-in-out;
+    animation: bounce 0.45s ease-in-out;
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes bounce {
+    0% { -webkit-transform: scale(1); }
+    70% { -webkit-transform: scale(0.6); }
+    80% { -webkit-transform: scale(0.8); }
+    90% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+
+@-moz-keyframes bounce {
+    0% { -webkit-transform: scale(1); }
+    70% { -webkit-transform: scale(0.6); }
+    80% { -webkit-transform: scale(0.8); }
+    90% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+
+@keyframes bounce {
+    0% { -webkit-transform: scale(1); }
+    70% { -webkit-transform: scale(0.7); }
+    80% { -webkit-transform: scale(0.8); }
+    90% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+
