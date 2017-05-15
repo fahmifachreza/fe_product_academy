@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import MainHeader from '../components/MainHeader'
+import Thumbnail from '../components/Thumbnail'
 import './App.scss'
 
 class Home extends Component {
@@ -20,11 +21,61 @@ class Home extends Component {
   			url: 'https://www.google.com',
   		},
   	]
+
+    const thumbnails = [
+      {
+        imageThumb: 'http://placehold.it/200x300',
+        name: 'Tahu bulat',
+        price: '500',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },{
+        imageThumb: 'http://placehold.it/300x300',
+        name: 'Tahu kotak',
+        price: '700',
+      },
+    ]
     return (
       <div>
         <MainHeader menus={mainMenu} withLogo/>
-        <div className="container">
-	        <div className="banner"></div>
+        <div className='banner'>
+          <div className='banner-image'></div>
+          {/*<div className='banner-caption sh-right'>4 Sehat 5 Sempurna</div>*/}
+        </div>
+        <div className='container'>
+          {thumbnails && thumbnails.map(item => (
+            <Thumbnail data={item}></Thumbnail>
+          ))}
         </div>
       </div>
     );

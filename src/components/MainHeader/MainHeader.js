@@ -28,7 +28,7 @@ class MainHeader extends Component {
                     <div className='menu-item'>
                       <a href={item.url}>
                         {item.isButton
-                          ? <Button className={`btn-bounce ${item.buttonClass}`}>{item.text}</Button>
+                          ? <Button className={`btn-bounce ${item.buttonClass}`}><strong>{item.text}</strong></Button>
                           : item.text
                         }
                       </a>

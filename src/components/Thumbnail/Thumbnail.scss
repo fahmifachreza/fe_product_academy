@@ -1,0 +1,32 @@
+@import '../../styles/base.scss';
+
+.thumbnail-main {
+    padding: 5px;
+    display: inline-block;
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+
+    .thumbnail-photo {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .thumbnail-name {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        padding: 5px 0;
+
+        &:hover {
+            color: $main-green;
+        }
+    }
+}

@@ -1,5 +1,24 @@
+@import '../styles/base.scss';
+
 .banner {
-    width: 100%;
-    content: url('./assets/banner.jpg');
-    overflow: hidden;
+	width: 100%;
+	overflow: hidden;
+	max-height: 400px;
+
+	.banner-image {
+	    content: url('./assets/banner.jpg');
+	    width: 100%;
+	    position: relative;
+	}
+
+    .banner-caption {
+    	top: 30%;
+    	transform: translateY(-50%);
+    	position: absolute;
+    	font-weight: 900;
+    	color: $main-green;
+    	font-size: 4em;
+    	padding: 0 4rem;
+    	// text-shadow:  4px 4px rgba(0, 0, 0, 0.2);
+    }
 }
