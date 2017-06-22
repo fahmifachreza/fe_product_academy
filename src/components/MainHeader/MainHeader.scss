@@ -3,9 +3,10 @@
 .header {
     width: 100%;
     background-color: $white;
-    box-shadow: 1px 0 7px 1px $light-grey;
+    border-bottom: 1px solid $light-grey;
+    box-shadow: 1px 0 0px 0px $light-grey;
     margin: 0 auto;
-    position: fixed;
+    position: relative;
     z-index: 100;
 
     .header-title {
@@ -42,4 +43,8 @@
             }
         }
     }
+}
+
+.subheader {
+    position: sticky;
 }

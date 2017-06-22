@@ -1,6 +1,6 @@
 @import '../../styles/base.scss';
 
-@mixin btn-color($color) {
+@mixin button-color($color) {
     border-color: $color;
     background-color: $color;
     color: $white;
@@ -36,12 +36,12 @@
     }
 }
 
-@mixin btn-size($multiplier) {
+@mixin button-size($multiplier) {
     font-size: 14px * $multiplier;
     padding: (0.5rem * $multiplier) (2rem * $multiplier)
 }
 
-.btn {
+.button {
     padding: 0.5rem 2rem;
     border: 1px solid $light-grey;
     border-radius: 3px;
@@ -61,28 +61,28 @@
     }
 }
 
-.btn-primary { @include btn-color($main-orange) }
-.btn-secondary { @include btn-color($main-green) }
+.button-1 { @include button-color($main-orange) }
+.button-2 { @include button-color($main-green) }
 
-.btn-small { @include btn-size(0.8) }
-.btn-big { @include btn-size(1.4) }
+.button-small { @include button-size(0.8) }
+.button-big { @include button-size(1.4) }
 
-.btn-full {
+.button-full {
     display: block;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
 }
 
-.btn.disabled,
-.btn:disabled {
+.button.disabled,
+.button:disabled {
     border-color: transparent;
     background-color: $main-grey;
     color: $light-black;
     cursor: not-allowed;
 }
 
-.btn-bounce {
+.button-bounce {
     -webkit-animation: bounce 0.45s ease-in-out;
     -moz-animation: bounce 0.45s ease-in-out;
     animation: bounce 0.45s ease-in-out;

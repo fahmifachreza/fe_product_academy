@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-material-select": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",

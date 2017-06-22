@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 @import './colors.scss';
 @import './sorthand.scss';
 
@@ -8,9 +10,27 @@ html, body {
 	float: none;
 	font-family: 'Raleway', sans-serif;
 	box-sizing: border-box !important;
-	color: $main-black;
+	color: rgba(0,0,0,.44);
 	font-weight: 500;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	color: $main-black;
+}
+
+.material-icons.active {
+	color: $main-orange;
+}
+
+.rms-label {
+	color: $main-orange;
+}
+
+@mixin icon-size($size) {
+	font-size: $size;
+}
+
+.icon-small { @include icon-size(11px);}
 
 @media screen and (min-width: 1280px) {
 	.container {

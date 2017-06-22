@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Button from '../Button'
+import Love from '../Love'
 import './Thumbnail.scss';
 
 class Thumbnail extends Component {
@@ -8,15 +9,18 @@ class Thumbnail extends Component {
   }
 
   render() {
-    console.log(this.props);
     const data = this.props.data
     return (
       <div className='thumbnail-main'>
         <div className='thumbnail-photo'>
           <img src={data.imageThumb} alt='' />
         </div>
-        <div className='thumbnail-name'>{data.name}</div>
-        <Button className='btn btn-secondary btn-full'>Add to Snack Box</Button>
+        <div className='thumbnail-info'>
+          <h3 className='thumbnail-name'>{data.name}</h3>
+          <Love rate={3}></Love>
+          {/*<small>Rp. {data.price},-</small>*/}
+          <Button className='button button-2 button-full'>Add to Snack Box</Button>
+        </div>
       </div>
     )
   }
