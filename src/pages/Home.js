@@ -30,42 +30,25 @@ class Home extends Component {
         imageThumb: 'http://lorempixel.com/400/300/food',
         name: 'Tahu bulat',
         price: '500',
+        status: 1,
+        rate: 4,
+      },{
+        imageThumb: 'http://lorempixel.com/500/300/food',
+        name: 'Tahu kotak',
+        price: '700',
+        status: 1,
+        rate: 3,
+      },{
+        imageThumb: 'http://lorempixel.com/300/200/food',
+        name: 'Tempe',
+        status: 0,
+        rate: 5,
       },{
         imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
-      },{
-        imageThumb: 'http://lorempixel.com/400/300/food',
-        name: 'Tahu bulat',
-        price: '500',
+        name: 'Tempe kripik',
+        price: '400',
+        status: 1,
+        rate: 2,
       },
     ]
     return (
